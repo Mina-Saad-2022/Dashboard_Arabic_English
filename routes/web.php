@@ -19,7 +19,11 @@ Route::group(
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], static function(){
 
+
     Route::get('/', static function () {
-        return view('layout.ltr');
+        return view('index');
     });
+
+
+
 });
